@@ -19,22 +19,22 @@ public class GoogleSearch2 {
 
 		//the following 4 lines of code are used to launch the web browser
 		
-		WebDriverManager.chromedriver().setup();
+		/*WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); */
 
 	}
 
 	@When("i enter search {string}")
 	public void i_enter_search(String string) {
 		//1) find/locate the element	
-		WebElement searchbox;
-		searchbox=driver.findElement(By.name("q")); //in this step you go to the webpage and inspect what element you want to highlight 
+		//WebElement searchbox;
+		//searchbox=driver.findElement(By.name("q")); //in this step you go to the webpage and inspect what element you want to highlight 
 		
 		//2) perform action 
-		searchbox.sendKeys(string);
+	//	searchbox.sendKeys(string);
 		//generally any searchBox we use string 
 		
 	}
@@ -42,10 +42,10 @@ public class GoogleSearch2 {
 	@When("i click on google search button")
 	public void i_click_on_google_search_button() {
 		
-		WebElement searchButton; //you can name web element anything
+		/*WebElement searchButton; //you can name web element anything
 		searchButton=driver.findElement(By.name("btnK")); //""
 		//searchButton.click(); //if click button is not working, use the submit method 
-		searchButton.submit();
+		searchButton.submit(); */
 
 	}
 
